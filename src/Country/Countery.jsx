@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Country.css'
-const Countery = ({ country, handleVisitedCountry }) => {
+const Countery = ({ country, handleVisitedCountry, handleVisitedFlag }) => {
       // console.log(country)
       const [visit,stateVisited]=useState(false)
       const handleVisit=()=>{
@@ -20,6 +20,7 @@ const Countery = ({ country, handleVisitedCountry }) => {
                   <p>Independent : {country.independent ? 'Free':'Not Free'} </p>
                   <p>Population : {country.population} </p>
                   <button className={visit ?'btn-visited':'btn-not-visited'} onClick={handleVisit}>{visit ? 'visited':'Not visited'}</button>
+                  <button onClick={() => handleVisitedFlag(country.flags.png)}>Add To visited Flag</button>
             </div>
       );
 };
