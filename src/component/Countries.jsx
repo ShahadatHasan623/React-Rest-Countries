@@ -24,7 +24,7 @@ const Countries = ({ allData }) => {
                   <h3>Traveled so far :{visitedCountries.length}</h3>
                   <div className='visited-flag'>
                         {
-                              visitedFlag.map(flag=> <img src={flag}></img>)
+                              visitedFlag.map((flag) => <img src={flag}></img>)
                         }
                   </div>
                   <ol>
