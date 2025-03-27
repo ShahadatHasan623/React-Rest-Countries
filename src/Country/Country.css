@@ -1,0 +1,8 @@
+.Country{
+      border:2px solid tomato;
+      border-radius: 15px;
+      padding:10px;
+}
+.country-visited{
+      background-color: burlywood;
+}
